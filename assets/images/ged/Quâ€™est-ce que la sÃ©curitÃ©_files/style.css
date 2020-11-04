@@ -1,0 +1,402 @@
+/*
+Theme Name: Pixees
+Theme URI: http://sparticipatives.gforge.inria.fr/wp-plugins/
+Author: Sophie de Quatrebarbes
+Author URI: http://www.sophiedequatrebarbes.com
+Description: Le theme wordpress de pixees.fr
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@charset "UTF-8";
+
+/* -------------------- General aspect -------------------- */
+/* top right bottom left */
+
+html {background-color:#546B70;}
+body {max-width:1250px; background-color:#546B70; font-family:Arial, sans-serif; color:#266D83; font-style:normal; text-align:left;margin-top:30px;margin-left:auto;margin-right:auto;}
+@media (max-width:1100px) {
+  body {margin-left:0px;margin-right:0px;}
+}
+h1 {font-size:20px; margin-top:0px; text-transform:uppercase; font-weight:bold; font-family:Arial, sans-serif;color: #266D83;}
+h2 {font-size:20px; text-transform:uppercase;}
+h3 {font-size:16px; text-transform:uppercase;}
+h4 {font-size:14px; text-transform:uppercase; padding-left:30px; font-weight:lighter;}
+h5 {font-size:14px; font-weight:bold; margin-bottom:0px; text-transform:uppercase; line-height:14px; display:inline;}
+h6 {font-size:11px; color:#95B1BA; margin-top:10px; margin-bottom:20px; font-weight:lighter; text-transform:uppercase;}
+p {font-size:14px; color:#323232; line-height:18px; margin-bottom:20px; line-height:21px;}
+li {font-size:14px;}
+a {text-decoration:none; color:#266D83;}
+a:hover {color:#ccc;}
+img {border-style:none; max-width:100%; height:auto;}
+hr {clear:both; width:90%; height:0px; border-width: 1px 0 0 0; border-style: solid; border-color:#95B1BA;}
+#post- {font-size:14px; color:#323232; line-height:18px; margin-bottom:20px; line-height:21px;}
+
+.tag {text-transform:uppercase;}
+.tag a {font-size:11px; color:#95B1BA; margin-top:10px; margin-bottom:20px; font-weight:lighter;}
+
+/* Contextual colors */
+.accueil h1, .accueil h5, .accueil a:hover {color:#9DC107;} 
+.AIDE h1, .AIDE h5, .AIDE a:hover {color:#9DC107;} 
+.ressource h1, .ressource h5, .ressource a:hover {color:#FECD1B;}
+.formation h1, .formation h5, .formation a:hover {color:#296e84;}
+.definition h1, .definition h5, .definition a:hover {color:#FECD1B;}
+.intervention h1, .intervention h5, .intervention a:hover {color:#1C4672;}
+.accueil, .AIDE, .ressource, .formation, .definition, .intervention {clear:both;}
+
+/* -------------------- Header -------------------- */
+
+#header {width:100%; height:auto; padding-top:0px; margin-top:-20px; margin-bottom:0px; display:block;}
+
+#logo-bar {background-color:#FFFFFF; height:120px; width:100%; margin:0px; padding:0px}
+#pixees-logo {display:inline-block; width:420px; height:120px; background:url('_img/pixees-logo.png') 0 0 no-repeat; float:left; padding:0 0 0 0; margin-left:40px;}
+#classcode-logo {display:inline-block; width:420px; height:120px; background:url('_img/classcode-logo.png') 0 0 no-repeat; float:right; padding:0 0 0 0; margin-right:40px;}
+
+/* Menu bar. */
+
+#menu-bar {background-color:#B3CeD5; min-height:40px; height:auto; width:100%; margin:0 0 0 0; padding:0 0 0 0;}
+#menu {background-color:#B3CeD5; width:600px; height:40px; display:initial; margin:0px; padding-left:10px;} 
+#menu li {line-height:40px; display:inline-block; margin-left:10px; margin-right:10px; font-size:20px;font-weight:bold; text-transform:uppercase}
+#menu a {color:#fff;}
+#menu a:hover {color:#266D83;}
+#menu > ul , #contact-bar > ul {margin:0px; padding:0px; display:inline-block;}
+#menu > li , #contact-bar > li {text-decoration:none; list-style-type:none;}
+
+#flux {background-color:#B3CeD5; width:220px; height:40px; float:right; margin: 0; padding:0 0 0 10px;}
+#menu-bar-button {display:none; width:40px; height:40px; background:url('_img/menu-haut.png') 0 0 no-repeat; float:left;}
+#menu-rss {display:inline-block; width:40px; height:40px; background:url('_img/RSS.png') 0 0 no-repeat;}
+#menu-twitter {display:inline-block; width:40px; height:40px; background:url('_img/Twitter.png') 0 0 no-repeat;}
+#menu-youtube {display:inline-block; width:40px; height:40px; background:url('_img/Youtube.png') 0 0 no-repeat;}
+#menu-pearltree {display:inline-block; width:40px; height:40px; background:url('_img/Pearltree.png') 0 0 no-repeat;}
+#menu-search {display:inline-block; width:40px; height:40px; background:url('_img/Recherche.png') 0 0 no-repeat;}
+#menu-bar-button:hover {background-position:0 -40px;}
+#menu-rss:hover {background-position:0 -40px;}
+#menu-twitter:hover {background-position:0 -40px;}
+#menu-youtube:hover {background-position:0 -40px;}
+#menu-pearltree:hover {background-position:0 -40px;}
+#menu-search:hover {background-position:0 -40px;}
+
+#search-container {background-color:#B3CeD5; width:100%; height:45px; text-align:center; display:none;}
+#s {width:90%; height:30px;}
+.screen-reader-text {display:none;}
+#searchsubmit {display:none;}
+
+/* Contextual header */
+
+#bandeau {background-color:#EDF3F4; width:100%; float:left; text-align:left; padding:0px; margin:0px; text-transform:uppercase;}
+#bandeau-img {width:150px; height:auto; float:left; margin: 10px 0px 5px 10px;}
+#bandeau-img-formation {width:200px; height:auto; float:left; margin: 10px 0px 5px 10px;}
+#bandeau-txt {float:left; margin-left:10px;}
+#bandeau-more-actu {float:right; background-color:#9DC107;}
+#bandeau-more-form {float:right; background-color:#46c1c6;}
+#bandeau h1 {font-size:30px; padding-top:30px; margin: 0 0 5px 0; font-weight:bold;}
+#bandeau p {font-size:18px; color:#86717F; padding:0; margin:0;}
+
+/* Accueil page contextual header */
+
+#bandeau-accueil {background-color:#EDF3F4; width:100%; text-align:center;}
+#accueil {background-color:#EDF3F4; display:inline-block; width:22%; min-width:200px; height:auto; padding:10px; text-align:center;}
+#accueil h1 {font-weight:bold; font-size:20px; text-transform:uppercase;}
+#accueil p {color:#266D83; font-size:14px; text-transform:uppercase;}
+
+#pixees-actu {display:inline-block; width:124px; height:124px; background:url('_img/pixees-actu.png') 0 0 no-repeat;}
+#pixees-ressources {display:inline-block; width:135px; height:124px; background:url('_img/pixees-ressources.png') 0 0 no-repeat;}
+#pixees-formations {display:inline-block; width:180px; height:145px; background:url('_img/pixees-formation.png') 0 0 no-repeat;}
+#pixees-interventions {display:inline-block; width:124px; height:124px; background:url('_img/pixees-interventions.png') 0 0 no-repeat;}
+#pixees-contacts {display:inline-block; width:125px; height:125px; background:url('_img/pixees-contacts.png') 0 0 no-repeat;}
+#pixees-actu:hover {-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+#pixees-ressources:hover {-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+#pixees-formations:hover {-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+#pixees-interventions:hover {-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+#pixees-contacts:hover {-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+
+/* Responsive header behavior */
+
+@media (max-width:950px) {
+ #logo-bar {height:60px;}
+ #pixees-logo {width:210px; height:60px; background:url('_img/pixees-logo-small.png') 0 0 no-repeat;}
+ #classcode-logo {width:210px; height:60px; background:url('_img/classcode-logo-small.png') 0 0 no-repeat;}
+ #search-container {top:125px;}
+}
+@media (max-width:1150px) {
+ #menu-bar-button {display:inline-block;}
+ #menu {display:none; width:100%; height:250px; font-size:20px;}
+ #menu li {display:block;}
+}
+@media (max-width:490px) {
+ #logo-bar {height:120px;}
+}
+@media (max-width:1100px) {
+ #bandeau h1 {font-size:25px;}
+ #bandeau p {font-size:12px;}
+}
+@media (max-width:820px) {
+ #bandeau-txt {width:400px;height:auto;}
+}
+@media (max-width:600px) {
+ #bandeau-img {margin-left:auto; margin-right:auto; float:none;}
+ #bandeau-txt {text-align:center; margin-left:auto; margin-right:auto; float:none;}
+}
+
+/* -------------------- SIDEBAR -------------------- */
+
+#sidebar {background-color:#D8E6EA; display:table-cell; clear:both; width:250px; min-width:230px; height:auto; margin:0; padding:20px 10px 10px 10px;}
+#sidebar li {line-height:67px; display:inline-block;}
+#line-sidebar {width:100%; height:1px; background-color:#95B1BA; margin-top:20px;}
+
+#sidebar ul {padding-left:0px;}
+#sidebar li {display:block; font-size:12px; line-height:20px; padding-left:5px;}
+#sidebar h1 {margin-bottom:5px; font-weight:bold;}
+#sidebar h4 {display:block; font-size:12px; line-height:15px; padding-left:5px;}
+#sidebar h3 {font-size:14px; font-weight:bold;}
+
+/* #sidebar-button {display:none; float:left; width:40px; height:40px; background:url('_img/menu-sidebar.png') 0 -40px no-repeat;} */
+
+/* Abonnez vous */
+
+#abonnez-bar {display:table-row; width:230px;}
+#abonnez {display:table-cell; vertical-align:top; background-color:#fff; width:170px; height:40px; color:#95B1BA; text-align:right; font-size:12px; margin-right:5px;}
+#ok {display:table-cell; vertical-align:top; width:48px; height:40px; background:url(_img/ok.png) 0 0 no-repeat;}
+#ok:hover {background-position:0 -40px;}
+input[type="submit"] {margin:0; padding:5px; border:0;}
+input[type="reset"] {margin:0; padding:5px; border:0;}
+
+.widget_wysija {display:table-row; width:230px;}
+.wysija-paragraph {display:table-cell !important; line-height: 0; margin:0px !important; padding:0px !important;}
+.wysija-input {display:inline !important; vertical-align:top; background-color:#fff; width:170px; height:40px; color:#95B1BA; text-align:right; font-size:12px; margin: 0px 5px 0px 0px; padding:0px;}
+.abs-req { display:none; }
+.formErrorContent { display:none; }
+.wysija-submit {display:table-cell !important; vertical-align:top; width:48px; height:40px; background:url(_img/ok.png) 0 0 no-repeat;}
+.wysija-submit:hover {background-position:0 -40px;}
+
+/* A votre ecoute */
+
+#pixees-contact {margin-left:70px; display:block; width:125px; height:125px; background:url('_img/pixees-contacts.png') 0 0 no-repeat; text-align:center;}
+#pixees-contact:hover {-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+
+#contact-bar {width:280px; height:78px; margin-left:auto;margin-right:auto;}
+#tel {display:inline-block; width:67px; height:67px; margin:8px; background:url('_img/tel.png') 0 0 no-repeat; float:left;}
+#mail {display:inline-block; width:67px; height:67px; margin:8px; background:url('_img/mail.png') 0 0 no-repeat; float:left;}
+#hangout {display:inline-block; width:67px; height:67px; margin:8px; background:url('_img/Twitter-2.png') 0 0 no-repeat; float:left;}
+#tel:hover {background-position:0 -67px;}
+#mail:hover {background-position:0 -67px;}
+#hangout:hover {background-position:0 -67px;}
+
+/* -------------------- FOOTER -------------------- */
+
+#footer {background-color:#95B1BA; width:auto; height:auto; margin:0; padding:0; text-transform:uppercase;}
+#footer-menu {width:160px; height:auto; padding:5px; margin:0px; vertical-align:top; clear:both; display:inline-block;}
+#footer-menu ul {list-style-type: none;}
+#footer-menu h6 {display:inline; font-size:10pt; color:#d4e2e6;}
+#footer-menu li {font-size:8pt; line-height:16px;}
+#footer-menu li a {color:#d4e2e6;}
+#footer-menu li a:hover {color:#fff;}
+#footer-logo {width:220px; min-width:210px; height:auto; padding:0px; margin:0px;  margin-right:40px; float:right; }
+#footer-logo ul {padding:1px; margin:1px;}
+#footer-logo li {display:inline-block; width:34px; padding:1px; margin:1px;}
+
+@media (max-width:1200px) {
+  #footer-menu { padding:0px; }
+  #footer-logo { margin-right:20px; }
+}
+@media (max-width:1100px) {
+  #footer-logo { margin-right:0px; }
+}
+@media (max-width:1000px) {
+  #footer-menu {display:block;width:100%; }
+  #footer-logo {float:left;}
+}
+
+/* -------------------- FRAMEBANNER -------------------- */
+
+#banner {background-color:#D8E6EA; width:100%; height:auto; padding:20px 0px 30px 0px; margin:0; text-align:left;}
+
+/* -------------------- CONTENTS -------------------- */
+
+/* Conteneur */
+#conteneur {background-color:#fff; clear:both; display:table-row; width:100%; height:auto; margin:0; padding:0px; }
+#contenu {background-color:#fff; color:#000; display:table-cell; width:80%; height:auto; margin-right:10px; padding:0px; padding-top:10px;}
+#contenant {display:block; width:auto; padding:0px 10px 0px 20px; margin:0px;}
+
+@media (max-width:1024px) {
+ #conteneur {display:block;}
+ #contenu {display:block; padding:40px 20px 0px 20px; width:auto;}
+ #sidebar {display:block; width:100%;}
+}
+
+/* Contenu */
+
+section {clear:both;}
+#retour {margin-left:-30px;}
+
+#interline {width:100%; clear:both; height:3px; background-color:#FFFFFF;}
+#interline1 {width:100%; clear:both; height:10px; background-color:#FFFFFF;}
+#interline2 {width:100%; clear:both; height:25px; background-color:#FFFFFF;}
+#line {width:90%; clear:both; height:1px; margin-left:auto; margin-right:auto; background-color:#95B1BA;}
+
+#line-AIDE {width:auto; height:40px; margin:10px 0px 10px 0px; background-color:#9DC107; text-transform:uppercase; line-height:40px; text-align:right; padding-right:30px;}
+#line-ressource {width:auto; height:40px; margin:10px 0px 10px 0px; background-color:#FECD1B; text-transform:uppercase; line-height:40px; text-align:right; padding-right:30px;}
+#line-formation {width:auto; height:40px; margin:10px 0px 10px 0px; background-color:#296E84; text-transform:uppercase; line-height:40px; text-align:right; padding-right:30px;}
+#line-intervention {width:auto; height:40px; margin:10px 0px 10px 0px; background-color:#1C4672; text-transform:uppercase; line-height:40px; text-align:right; padding-right:30px;}
+
+#line-AIDE a {color:#fff;}
+#line-AIDE a:hover {color:#266D83;}
+#line-ressource a {color:#fff;}
+#line-ressource a:hover {color:#266D83;}
+#line-formation a {color:#fff;}
+#line-formation a:hover {color:#266D83;}
+#line-intervention a {color:#fff;}
+#line-intervention a:hover {color:#266D83;}
+
+/* Contenu - page article - PARTICIPEZ */
+#trailer {clear:both;}
+#pixees-participez-haut {display:inline-block; width:124px; height:62px; background:url('_img/pixees-participez-haut.png') 0 0 no-repeat; padding:0; margin-top:20px; float:right;}
+#pixees-participez-bas {display:inline-block; width:124px; height:62px; background:url('_img/pixees-participez-bas.png') 0 0 no-repeat; padding:0; margin:0; float:right;}
+#participez-ht {background-color:#fff; width:100%; padding:0; margin:0px;}
+#participez {background-color:#266D83; color:#fff; width:100%; padding-bottom:10px; margin:0px;}
+#participez a {color:#fff;}
+#participez li {display:inline-block; line-height:60px;}
+#participez h1 {color:#fff; font-size:40px; margin-left:50px; line-height:50px; text-transform:uppercase;}
+
+@media (max-width:900px) {
+ #participez li {display:block;}
+}
+
+/* Contenu - page article - PARTICIPEZ - icones */
+#question {display:inline-block; width:100%; height:50px; background:url('_img/question.png') 0 0 no-repeat; padding-left:60px; line-height:50px; text-transform:uppercase;}
+#commentaire {display:inline-block; width:100%; height:50px; background:url('_img/commentaire.png') 0 0 no-repeat; padding-left:60px; line-height:50px; text-transform:uppercase;}
+#partage {display:inline-block; width:100%; height:50px; background:url('_img/partage.png') 0 0 no-repeat; padding-left:60px; padding-right:20px; line-height:50px; text-transform:uppercase;}
+#note {display:inline-block; width:100%; height:50px; background:url('_img/note.png') 0 0 no-repeat; padding-left:60px; padding-right:20px; line-height:50px; text-transform:uppercase;}
+#question:hover {background-position:0 -50px;}
+#commentaire:hover {background-position:0 -50px;}
+#partage:hover {background-position:0 -50px;}
+#note:hover {background-position:0 -50px;}
+
+/* Contenu - LEXIQUE */
+#lexique li {display:inline-block; margin-top:0px; margin-bottom:0px;}
+.lettres {background-color:#D8E6EA; padding:4px; font-size:18px;}
+#lex-recherche {background-color:#D8E6EA; width:800px; height:40px; padding: 10px 10px 0px 10px; text-align:left; float:left;} 
+#glossaire {width:300px; float:left; margin:0px;}
+.definition {width:490px; float:left; margin-top:0px; padding-left:10px;}
+#glossaire h1 {margin-left:10px;}
+
+/* Contenu - BUTTON */
+.button { background-color:#266D83; color:#FFF; cursor:pointer; font-size:18px; font-weight:bold; text-transform:uppercase; min-height:50px; min-width:180px; line-height:50px; padding:5px; margin:10px 0px 0px 0px; }
+a.button { padding:20px; }
+
+/* Mise en page des plugins sociable */
+#social-icon-line {display: table-row; float:right;}
+.heateor_sss_sharing_container {display:table-cell;}
+.clearfix {display:inline;}
+.sociable_tagline {display:none;}
+.wpptopdfenh {display:table-cell;}
+.printfriendly {display:table-cell;}
+
+/* Mise en page liee aux tags wordpress */
+img {padding:10px;}
+.alignleft {float:left; margin-right:30px;}
+.alignright {float:right; margin-left:30px;}
+.aligncenter {display:block; margin-left:auto; margin-right:auto;}
+
+/* Mise en page du plugin de traduction google */
+#flags {width:100% ! important;}
+
+/* Mise en page liee aux commentaires */
+#comments {clear:both; background-color:#eee; padding: 20px 10px 10px 10px; margin: 0px 20px 0px 0px;}
+#comments ul {list-style-type:none;}
+#comments label {vertical-align:top;}
+.form-submit input[type=submit] { background-color:#808080; cursor:pointer; }
+.form-submit input[type=submit]:hover { background-color:#266d83; }
+
+/* Mise en page du plugin de http_syndication */
+#httpsyndication-wform {display:inline;}
+
+/* Customization du login. */
+body.login div#login {background-color:#EDF3F4;width:100%;padding:0px;margin:0px;}
+body.login div#login h1 {display:none;}
+body.login div h1 a {background-image:none;}
+body.login div#login form#loginform {width:400px;margin-left:auto;margin-right:auto;}
+body.login div#login p#nav {padding-bottom:40px;}
+body.login div#login p#nav a {font-weight:bold;color:black;font-size:20px;}
+body.login div#login p#backtoblog {display:none;}
+
+/* Rendre les iframe responsives. */
+.iframe-intrinsic-container {position:relative; height:0; overflow:hidden; padding-bottom:550px;}
+@media (max-width:1100px) { .iframe-intrinsic-container {padding-bottom:1100px;}}
+@media (max-width:1010px) { .iframe-intrinsic-container {padding-bottom:550px;}}
+@media (max-width:920px) { .iframe-intrinsic-container {padding-bottom:1100px;}}
+.iframe-intrinsic-container iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+/* Style des popdown. */
+.popdown-include { background-color:#46C1C6;color:#FFF;font-size:20px; font-weight:bold;text-transform:none;min-height:50px;line-height:50px;}
+.popdown-include > a { color:#FFF; }
+.popdown-inline { background-color:#D8E6EA;font-weight:bold;min-height:40px;line-height:40px;}
+.popdown-inline-body { background-color:#EDF3F4; padding:5px 20px;}
+
+/* Style des ressources Class'Code */
+
+.openClassroomLink2 { 
+  background-image: url("_img/classcode_pictos/img-17.png"),url("_img/classcode_pictos/img-19.png");
+  background-position:  10px 6px,95% 6px ; 
+  background-repeat: no-repeat,  no-repeat ;
+  display:block;
+  width:350px;
+  background-color:#999999;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  padding:5px 0px 5px 50px;
+  margin-left: 250px;
+  margin-top:25px;  
+}
+@media (max-width:1500px) {
+  .openClassroomLink2 { 
+    clear:both;
+  }
+}
+
+.moduleRessources { 
+ clear:both;
+ margin-right:10px;
+}
+.moduleRessources h2 { 
+  background-color:#26CFCF;
+  text-transform: uppercase;
+  font-weight:bold;
+  color:white;
+  font-size:18px;
+  height:35px;
+  line-height:35px;
+  width:900px;
+  margin:10px 0px 0px 0px;
+  padding:0px;
+}
+.moduleRessources p {
+  display:block;
+  width:880px;
+  height:35px;
+  line-height:35px;
+  background-color:#edf3f4;
+  color:black;
+  font-size:16px;
+  margin:0px;
+  padding:0 10px;
+}
+.moduleRessources p.odd {
+  background-color:#fff;
+}
+.moduleRessources p:hover {
+  background-color:#fecd1b;
+}
+.moduleRessources p a { 
+  font-weight:bold;
+  color:#266d83;
+}
+
+/* Clean display. */
+#wp-admin-bar-new_draft { display:none; }
+
+wp-block {
+    max-width: 2048px !important;
+}

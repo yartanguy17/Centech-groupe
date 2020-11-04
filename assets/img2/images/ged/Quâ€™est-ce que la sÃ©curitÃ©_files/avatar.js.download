@@ -1,0 +1,58 @@
+'use strict';
+
+var myAvatarAppScope = function($scope) {
+   $scope.colors = [
+      "#F4B852",
+      "#E6764E",
+      "#DB3C3A",
+      "#D74189",
+      "#6C498C",
+      "#414B8E",
+      "#7598C3",
+      "#6CC1B6",
+      "#5FB569",
+      "#BDD563",
+      "#837839"
+   ];
+
+   $scope.arrows = { color: '#38AEF7' };
+
+   $scope.parts = [
+      { name: "Coiffure", nbTypes: 6},
+      { name: "Yeux", nbTypes: 6},
+      { name: "Mains", nbTypes: 3},
+      { name: "Bouche", nbTypes: 6},
+      { name: "Corps", nbTypes: 6},
+      { name: "Pieds", nbTypes: 6}
+   ];
+
+   $scope.avatar = myAvatarValue;
+
+   $scope.changePart = function(part, delta) {
+      $scope.avatar[part.name] = ($scope.avatar[part.name] - 1 + delta + part.nbTypes) % part.nbTypes + 1;
+      myAvatarValue = $scope.avatar;
+   };
+
+   $scope.changeColor = function(color) {
+     $scope.avatar['color'] = color;
+     myAvatarValue = $scope.avatar;
+   };
+
+   $scope.bigTransform = "scale(1) translate(-35, -40)";
+   $scope.smallTransform = "scale(.53) translate(-35, -40)";
+};
+
+var myAvatarAppE = angular.module('avatar_classcode_E', []);
+var myAvatarApp = angular.module('avatar_classcode_D', []);
+myAvatarAppE.controller('AvatarCtrl', ['$scope', myAvatarAppScope]);
+myAvatarApp.controller('AvatarCtrl', ['$scope', myAvatarAppScope]);
+var myAvatarValue = {
+ color: 0,
+ Coiffure: 1,
+ Corps: 1,
+ Pieds: 1,
+ Mains: 1,
+ Yeux: 1,
+ Bouche: 1
+};
+
