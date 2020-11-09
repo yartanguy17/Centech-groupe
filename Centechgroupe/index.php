@@ -14,11 +14,10 @@ include('vew/header.php');
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.php">Acceuil</a></li>
+          <li class="active makeActive" ><a href="index.php">Acceuil</a></li>       
 
-          
+            <?php include('servicesHover.php')?> 
 
-          <li><a href="services.php">Services</a></li>
           <li><a href="portfolio.php">Portfolio</a></li>
           <li ><a  href="Pricing.php">Qui sommes nous?</a></li>
           <li><a href="blog.php">Blog</a></li>
@@ -26,13 +25,10 @@ include('vew/header.php');
 
         </ul>
       </nav><!-- .nav-menu -->
+      <?php 
+      include('header-social-links.php');
+      ?>
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
 
     </div>
   </header><!-- End Header -->
@@ -87,20 +83,31 @@ include('vew/header.php');
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2></strong></h2>
+          <h2><strong>Bienvenue chez <span class="centech">CENTECH</span></strong></h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right">
-            
-            <img src="assets/images/img.jpg" style="height: 500px;" />
+            <p>              
+              <span class="centech">Centre d’Etude des Nouvelles Technologies et Energies</span> est une 
+              structure technique et commerciale installée au TOGO depuis Juin 2014. 
+              Elle intègre le Groupe WAVETEC depuis 2016 et devient ainsi le 
+              support technique et commerciale dans la Zone Afrique Francophone du Groupe Anglais, 
+              l’un des leaders en Transformation Digitale.  
+            </p>
+
+            <img src="assets/images/logo1.jpeg" style="height: 400px; margin-top: -17px; margin-left: -70px;" />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p>
-              Bienvenu chez  CENTECH-Groupe,
+            <span class="centech">CENTECH</span> fonde sa principale activité sur l’Ingénierie Informatique, la Transformation Digitale 
+            et l’Intégration des Réseaux d’entreprises et urbains.  
+            Pour ses décideurs, la culture de l’excellence et du travail bien fait est le cheval de bataille 
+            de tous les jours.
+ 
             </p>
             
-            <img src="assets/images/logo1.jpeg" style="height: 400px;" >
+            <img src="assets/images/img.jpg" style="height: 500px;" >
           </div>
         </div>
 
@@ -235,62 +242,11 @@ include('vew/header.php');
 
   </main><!-- End #main -->
 
-  <footer id="footer">
+  <?php
+    include('footer.php') 
+  ?>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-             <h4> Newsletter</h4>
-            <form action="" method="post">
-              <input type="email" name="email"><input   style="background-color: #2fc1e6;" type="submit" value="Envoyer">
-            </form>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  
-    <div class="container d-md-flex py-4">
-  
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Centech</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
 
-  <a  style="background-color: #2fc1e6;" href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/venobox/venobox.min.js"></script>
-<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
 
 </body>
 

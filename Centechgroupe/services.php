@@ -16,9 +16,49 @@ include('vew/header.php');
         <ul>
           <li ><a href="index.php">Acceuil</a></li>
 
-          
-
-          <li class="active" ><a href="services.php">Services</a></li>
+          <li class="active makeActive" onmouseover="makeVisible()" onmouseout="makeUnvisible()">
+          <a href="services.php">Services</a>
+                <div class="vision">
+                    <div class="vision_dropdown">
+                    <div class="row">
+                        <div class="col-4">
+                        <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <li><a class="nav-link active" id="v-pills-services-tab" data-toggle="pill" href="#v-pills-services" role="tab" aria-controls="v-pills-services" aria-selected="true">INGENIEURIE INFORMATIQUE</a></li>
+                            <li><a class="nav-link" id="v-pills-portfolio-tab" data-toggle="pill" href="#v-pills-portfolio" role="tab" aria-controls="v-pills-portfolio" aria-selected="false">INFOGERANCE & LEASING</a></li>
+                            <li><a class="nav-link" id="v-pills-description-tab" data-toggle="pill" href="#v-pills-description" role="tab" aria-controls="v-pills-description" aria-selected="false">SECURITE INFORMATIQUE</a></li>
+                            <li><a class="nav-link" id="v-pills-blog-tab" data-toggle="pill" href="#v-pills-blog" role="tab" aria-controls="v-pills-blog" aria-selected="false">AUDIT INFORMATIQUE</a></li>
+                            <li><a class="nav-link" id="v-pills-digitale-tab" data-toggle="pill" href="#v-pills-digitale" role="tab" aria-controls="v-pills-digitale" aria-selected="false">TRANSFORMATION DIGITALE</a></li>
+                            <li><a class="nav-link" id="v-pills-mmoney-tab" data-toggle="pill" href="#v-pills-mmoney" role="tab" aria-controls="v-pills-mmoney" aria-selected="false">MOBILE MONEY</a></li>
+                            <li><a class="nav-link" id="v-pills-courant-tab" data-toggle="pill" href="#v-pills-courant" role="tab" aria-controls="v-pills-courant" aria-selected="false">CÂBLE COURANT FORT ET FAIBLE</a></li>
+                            <li><a class="nav-link" id="v-pills-electronique-tab" data-toggle="pill" href="#v-pills-electronique" role="tab" aria-controls="v-pills-electronique" aria-selected="false">SÛRETE ELECTRONIQUE</a></li>
+                            <li><a class="nav-link" id="v-pills-archivage-tab" data-toggle="pill" href="#v-pills-archivage" role="tab" aria-controls="v-pills-archivage" aria-selected="false">ARCHIVAGE NUMERIQUE ET GED</a></li>
+                            <li><a class="nav-link" id="v-pills-incubation-tab" data-toggle="pill" href="#v-pills-incubation" role="tab" aria-controls="v-pills-incubation" aria-selected="false">INCUBATION DE STARTUPs</a></li>
+                            <li><a class="nav-link" id="v-pills-forum-tab" data-toggle="pill" href="#v-pills-forum" role="tab" aria-controls="v-pills-forum" aria-selected="false">FORUMS ET SALONS TECHNOLOGIQUES </a></li>
+                            <li><a class="nav-link" id="v-pills-certification-tab" data-toggle="pill" href="#v-pills-certification" role="tab" aria-controls="v-pills-certification" aria-selected="false">FORMATION ET CERTIFICATION</a></li>
+                        </nav>
+                        </div>                
+                        <div class="col-8" >
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab" style="overflow-x: hidden;">
+                            <p>Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit amet. <br> lorem</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-portfolio" role="tabpanel" aria-labelledby="v-pills-portfolio-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-description" role="tabpanel" aria-labelledby="v-pills-description-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-blog" role="tabpanel" aria-labelledby="v-pills-blog-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-digitale" role="tabpanel" aria-labelledby="v-pills-digitale-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-mmoney" role="tabpanel" aria-labelledby="v-pills-mmoney-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-courant" role="tabpanel" aria-labelledby="v-pills-courant-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-electronique" role="tabpanel" aria-labelledby="v-pills-electronique-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-archivage" role="tabpanel" aria-labelledby="v-pills-archivage-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-incubation" role="tabpanel" aria-labelledby="v-pills-incubation-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-forum" role="tabpanel" aria-labelledby="v-pills-forum-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-certification" role="tabpanel" aria-labelledby="v-pills-certification-tab">...</div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+          </li>
           <li><a href="portfolio.php">Portfolio</a></li>
           <li ><a  href="Pricing.php">Qui sommes nous?</a></li>
           <li><a href="blog.php">Blog</a></li>
@@ -27,12 +67,9 @@ include('vew/header.php');
         </ul>
       </nav><!-- .nav-menu -->
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
+      <?php 
+      include('header-social-links.php');
+      ?>
 
     </div>
   </header><!-- End Header -->
@@ -44,7 +81,7 @@ include('vew/header.php');
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2 style="font-size: 40px;">Service</h2>
+          <h2 style="font-size: 40px;">Services</h2>
           
         </div>
 
@@ -57,8 +94,8 @@ include('vew/header.php');
           <div class="card">
             <img src="assets/images/Capturewave1.PNG"  > 
             <div class="card-body">
-              <h5 class="card-title">Queue Management System</h5>
-              <p class="card-text">Wavetec’s turnkey enterprise solution is designed to help businesses manage service areas effectively, reduce waiting times & improve service efficiency.</p>
+              <h5 class="card-title">Système de gestion des files d'attente</h5>
+              <p class="card-text">La solution d'entreprise clé en main de Wavetec est conçue pour aider les entreprises à gérer efficacement les zones de service, à réduire les temps d'attente et à améliorer l'efficacité du service.</p>
             </div>
           </div>
         </div>
@@ -66,8 +103,8 @@ include('vew/header.php');
           <div class="card">
             <img src="assets/images/wave2.PNG" > 
             <div class="card-body">
-              <h5  class="card-title">Customer Feedback</h5>
-              <p class="card-text">Opinion Plus – An advanced feedback system that facilitates businesses to collect  real-time information about customer opinions and service experiences.</p>
+              <h5  class="card-title">Commentaires des clients</h5>
+              <p class="card-text">Opinion Plus - Un système de rétroaction avancé qui permet aux entreprises de collecter des informations en temps réel sur les opinions des clients et les expériences de service.</p>
               
             </div>
           </div>
@@ -76,8 +113,8 @@ include('vew/header.php');
           <div class="card">
             <img src="assets/images/wave3.PNG"  > 
             <div class="card-body">
-              <h5 class="card-title">Self Service Kiosks</h5>
-              <p class="card-text">Our range of self-service kiosks gives your customers the choice and flexibility to carry out their transactions at any location more conveniently.</p>
+              <h5 class="card-title">Kiosques libre-service</h5>
+              <p class="card-text">Notre gamme de bornes libre-service donne à vos clients le choix et la flexibilité d'effectuer leurs transactions à n'importe quel endroit de manière plus pratique.</p>
               
             </div>
           </div>
@@ -95,60 +132,12 @@ include('vew/header.php');
 
   </main><!-- End #main -->
 
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-             <h4> Newsletter</h4>
-            <form action="" method="post">
-              <input type="email" name="email"><input   style="background-color: #2fc1e6;" type="submit" value="Envoyer">
-            </form>
-          </div>
+  <?php
+    include('footer.php') 
+  ?>
   
-        </div>
-      </div>
-    </div>
-  
-    <div class="container d-md-flex py-4">
-  
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Centech</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
   <a  style="background-color: #2fc1e6;" href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <?php include('scripts.php') ?>
 
 </body>
 

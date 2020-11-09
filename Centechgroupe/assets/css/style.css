@@ -8,6 +8,48 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.centech{
+  color: #29aefb;
+}
+.vision {
+  position: absolute;
+  top: 100%;
+  left: -140px;
+  z-index: 1000;
+  min-width: 100%;
+  padding-top: 5px;
+  visibility: hidden;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.vision_dropdown {
+  background-color: #29aefb;
+  border: 1px solid #d3d3d3;
+  box-shadow: 5px 5px 30px black;
+  border-radius: 5px;
+  min-width: 900px;
+  padding: 20px;  
+}
+.vision_display{
+  padding: 5px;
+  margin: 5px;
+}
+.anima{
+  border: 0px solid #29aefb; 
+  box-shadow: 5px 5px 30px black; 
+  border-radius: 15px;
+  transition: .5s;
+}
+.anima:hover{
+  box-shadow: 5px 5px 5px black;
+}
+
+
+
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
@@ -843,6 +885,8 @@ section {
   opacity: 1;
   bottom: 20px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Clients
