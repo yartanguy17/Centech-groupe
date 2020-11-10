@@ -53,7 +53,7 @@ include('vew/header.php');
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>CENTECH GROUPE SÛRETE </h2>       
+          <h2>CENTECH SÛRETE </h2>       
           <p>Le service de SÛRETE ELECTRONIQUE  de CENTECH est à votre service .</p>
         </div>
         <div   class="row content">

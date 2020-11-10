@@ -50,7 +50,7 @@ include('vew/header.php');
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog">
+  <!--  <section id="blog" class="blog">
       <div class="container">
 
         <div class="row">
@@ -85,7 +85,7 @@ include('vew/header.php');
                 </div>
               </div>
 
-            </article><!-- End blog entry -->
+            </article>End blog entry 
 
             <article class="entry" data-aos="fade-up">
 
@@ -115,7 +115,7 @@ include('vew/header.php');
                 </div>
               </div>
 
-            </article><!-- End blog entry -->
+            </article>End blog entry
 
             <article class="entry" data-aos="fade-up">
 
@@ -145,7 +145,7 @@ include('vew/header.php');
                 </div>
               </div>
 
-            </article><!-- End blog entry -->
+            </article>End blog entry
 
             <article class="entry" data-aos="fade-up">
 
@@ -175,7 +175,7 @@ include('vew/header.php');
                 </div>
               </div>
 
-            </article><!-- End blog entry -->
+            </article>End blog entry 
 
             <div class="blog-pagination">
               <ul class="justify-content-center">
@@ -187,7 +187,7 @@ include('vew/header.php');
               </ul>
             </div>
 
-          </div><!-- End blog entries list -->
+          </div> End blog entries list 
 
           <div class="col-lg-4">
 
@@ -200,7 +200,7 @@ include('vew/header.php');
                   <button type="submit"><i class="icofont-search"></i></button>
                 </form>
 
-              </div><!-- End sidebar search formn-->
+              </div> End sidebar search formn
 
               <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
@@ -213,7 +213,7 @@ include('vew/header.php');
                   <li><a href="#">Educaion <span>(14)</span></a></li>
                 </ul>
 
-              </div><!-- End sidebar categories-->
+              </div> End sidebar categories
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
@@ -247,8 +247,7 @@ include('vew/header.php');
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
-              </div><!-- End sidebar recent posts-->
-
+              </div>End sidebar recent posts
               <h3 class="sidebar-title">Tags</h3>
               <div class="sidebar-item tags">
                 <ul>
@@ -266,16 +265,16 @@ include('vew/header.php');
                   <li><a href="#">Marketing</a></li>
                 </ul>
 
-              </div><!-- End sidebar tags-->
+              </div> End sidebar tags
 
-            </div><!-- End sidebar -->
+            </div> End sidebar 
 
-          </div><!-- End blog sidebar -->
+          </div> End blog sidebar 
 
         </div>
 
       </div>
-    </section><!-- End Blog Section -->
+    </section> End Blog Section -->
 
   </main><!-- End #main -->
 

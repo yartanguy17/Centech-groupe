@@ -8,6 +8,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.vision_dropdown .col-4{
+  border-right: 3px solid black;
+}
+
+.vision_dropdown .active{
+  background-color: black;
+}
+
+/*.vision_dropdown .col-8{
+  background-color: white;
+}*/
 
 .centech{
   color: #29aefb;
@@ -24,12 +35,12 @@
   transition: all 0.3s ease;
 }
 .vision_dropdown {
-  background-color: #29aefb;
+  background-color: #2fc1e6;
   border: 1px solid #d3d3d3;
   box-shadow: 5px 5px 30px black;
   border-radius: 5px;
   min-width: 900px;
-  padding: 20px;  
+  padding: 10px;  
 }
 .vision_display{
   padding: 5px;

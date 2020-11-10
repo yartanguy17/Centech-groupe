@@ -3,6 +3,40 @@
 <div class="footer-top">
   <div class="container">
     <div class="row">
+    <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>CENTECH</h3>
+            <p>
+              138, Boulevard du 13 Janvier<br>
+              Hanoukopé, Lomé<br>
+              TOGO <br><br>
+              <strong>Tel:</strong> +228 90 22 23 14/+228 99 01 62 66 <br>
+              <strong>Email:</strong> centech@centech-togo.com <br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Liens Utiles</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Accueil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio.php">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pricing.php">Qui sommes nous?</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="blog.php">Blog</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Certains de nos services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="ged.php">ARCHIVAGE NUMERIQUE ET GED</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="infogerance.php">INFOGERANCE & LEASING</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="surete.php">SECURITE INFORMATIQUE</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="formation.php">FORMATION ET CERTIFICATION</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="forum.php">ORGANISATION DE FORUMS ET SALONS TECHNOLOGIQUES</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="money.php">MOBILE MONEY </a></li>
+            </ul>
+          </div>
       <div class="col-lg-4 col-md-6 footer-newsletter">
          <h4>Newsletter</h4>
         <form action="" method="post">

@@ -51,7 +51,7 @@ include('vew/header.php');
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>CENTECH GROUPE SECURITE</h2>
+          <h2>CENTECH SECURITE</h2>
           
           <p>Le service de securité informatique de CENTECH est à votre service .</p>
         </div>
