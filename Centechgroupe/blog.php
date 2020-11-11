@@ -8,8 +8,9 @@ include('vew/header.php');
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.php" style="color: #2fc1e6;">Centech</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
+    <h1 class="logo mr-auto"><a href="index.php" style="color: #2fc1e6;">
+      <img src="assets/images/logo.jpg" alt="Logo" width="100" height="50">
+    </a></h1>      <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">

@@ -1,32 +1,50 @@
-/**
-* Template Name: Company - v2.1.0
-* Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-.vision_dropdown .col-4{
-  border-right: 3px solid black;
+.formation_img{
+  width: auto; 
+  height: 300px; 
+  background-color: #28AEF9; 
+  color: white; 
+  font-size: 80px;
+  text-align: center; 
+  padding-top: 75px; 
+  border: 1px blue solid; 
+  border-radius: 20px;
 }
 
-.vision_dropdown .active{
-  background-color: black;
+.vision_dropdown .col-4 .active{
+  background-color: #29aefb;
 }
+
+vision_dropdown .col-4 {
+  color: white;
+}
+
+
+.vision_dropdown .col-8 {
+  background-color: #29aefb;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+
+
+}
+
+
 
 /*.vision_dropdown .col-8{
   background-color: white;
 }*/
 
+.vision_dropdown .col-4{
+  border-right: 3px solid black;
+}
 .centech{
   color: #29aefb;
 }
 .vision {
   position: absolute;
   top: 100%;
-  left: -140px;
+  left: -200px;
   z-index: 1000;
   min-width: 100%;
   padding-top: 5px;
@@ -35,12 +53,14 @@
   transition: all 0.3s ease;
 }
 .vision_dropdown {
-  background-color: #2fc1e6;
+  background-color: white;
   border: 1px solid #d3d3d3;
   box-shadow: 5px 5px 30px black;
   border-radius: 5px;
-  min-width: 900px;
+  min-width: 920px;
   padding: 10px;  
+  padding-right: 25px;
+  
 }
 .vision_display{
   padding: 5px;
@@ -148,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  margin-top: -20px;
 }
 
 /*--------------------------------------------------------------
@@ -183,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #1bbd36;
+  color: blue;
 }
 
 .nav-menu .drop-down ul {
@@ -281,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #1bbd36;
+  color: blue;
 }
 
 .mobile-nav {

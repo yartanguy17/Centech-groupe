@@ -8,8 +8,9 @@ include('vew/header.php');
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.php" style="color: #2fc1e6;">Centech</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
+    <h1 class="logo mr-auto"><a href="index.php" style="color: #2fc1e6;">
+      <img src="assets/images/logo.jpg" alt="Logo" width="100" height="50">
+    </a></h1>      <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
@@ -18,7 +19,7 @@ include('vew/header.php');
           <?php include('servicesHover.php')?>
           <li><a href="portfolio.php">Portfolio</a></li>
           <li  class="active makeActive"><a  href="Pricing.php">Qui sommes nous?</a></li>
-          <li><a href="blog.php">Blog</a></li>
+          <!--<li><a href="blog.php">Blog</a></li>-->
           <li><a href="contact.php">Contact</a></li>
 
         </ul>
@@ -118,7 +119,7 @@ include('vew/header.php');
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <!--<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
                 <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
@@ -152,7 +153,7 @@ include('vew/header.php');
                 <span>Accountant</span>
               </div>
             </div>
-          </div>
+          </div>-->
 
         </div>
 

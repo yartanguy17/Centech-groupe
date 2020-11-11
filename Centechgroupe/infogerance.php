@@ -8,8 +8,9 @@ include('vew/header.php');
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.php" style="color: #2fc1e6;">Centech</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
+    <h1 class="logo mr-auto"><a href="index.php" style="color: #2fc1e6;">
+      <img src="assets/images/logo.jpg" alt="Logo" width="100" height="50">
+    </a></h1>      <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
@@ -19,7 +20,7 @@ include('vew/header.php');
           
           <li class="active makeActive"><a href="portfolio.php">Portfolio</a></li>
           <li ><a  href="Pricing.php">Qui sommes nous?</a></li>
-          <li><a href="blog.php">Blog</a></li>
+          <!--<li><a href="blog.php">Blog</a></li>-->
           <li><a href="contact.php">Contact</a></li>
 
         </ul>
@@ -74,14 +75,10 @@ include('vew/header.php');
 
       </div>
     </section><!-- End Qui sommes nous? Section -->
-    <section   style="background-color:mintcream;" id="about-us" class="about-us">
+    <section   style="background-color:#fafdff;" id="about-us" class="about-us">
       <div  class="container" data-aos="fade-up">
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            
-          <img src="assets/images/info/infog4.jpg" style="height: 300px">
-             </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <ul>
               <li><i class="ri-check-double-line"></i> Audit et conseil</li>
               <li><i class="ri-check-double-line"></i> Installations et paramétrages</li>
@@ -93,6 +90,10 @@ include('vew/header.php');
             <p>Ces offres d’infogérance s’adaptent à la taille de votre parc informatique, 
               à vos logiciels métier et à vos usages.</p> 
           </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            
+          <img src="assets/images/info/infog4.jpg" style="height: 300px">
+          </div>
         </div>
 
       </div>
@@ -100,6 +101,10 @@ include('vew/header.php');
     <section   id="about-us" class="about-us">
       <div  class="container" data-aos="fade-up">
         <div class="row content">
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <img src="assets/images/infog2.jpg" style="margin-left : -40px;">
+            
+          </div>
           <div class="col-lg-6" data-aos="fade-right">
             <p> Les avantages de l’infogérance sur site:</p>
             <ul>
@@ -120,43 +125,29 @@ include('vew/header.php');
             
                
              </div>
+        </div>
+
+      </div>
+    </section>
+    <section style="background-color:#fafdff;" id="about-us" class="about-us">>
+      <div  class="container" data-aos="fade-up">
+        <div class="row content">
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <img src="assets/images/infog2.jpg" style="margin-left : 100px;">
-            
+          <div style="text-align:right;">
+            <h3 >Nous intervenons  sur différents aspects :</h3>
+            <p  >    	Diagnostic et identification de la panne</p>
+            <p >     Établissement de devis pour remplacer le matériel en cause</p>
+            <p >     Remplacement des pièces</p>
+            <p > 	Configuration de poste utilisateurs ou de serveurs</p>   
+          </div>            
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/images/index.jpg" style="height: 300px; width:300px;">               
           </div>
         </div>
 
       </div>
     </section>
-    <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
-        <h3 >Nous intervenons  sur différents aspects :</h3>
-        <img src="assets/images/internet.jpg" style="float: left;height: 300px;">
-       <div style="text-align:right;">
-        <p  >    	Diagnostic et identification de la panne</p>
-        <p >     Établissement de devis pour remplacer le matériel en cause</p>
-        <p >     Remplacement des pièces</p>
-        <p > 	Configuration de poste utilisateurs ou de serveurs</p>
-    
-   
-      </div>
-        
-      </div>
-    </section>
-    <section   style="background-color:mintcream;" id="about-us" class="about-us">
-      <div  style="text-align: center;" class="container" data-aos="fade-up">
-        <div class="section-title">
-         
-        </div>
-        
-        </div>
-
-      </div>
-    </section>
-    <div class="container">
-      
-    </div>
-
     
  
 

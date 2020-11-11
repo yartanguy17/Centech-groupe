@@ -11,23 +11,6 @@ makeVisible = () =>{
     
 }
 
-/*function screenAdapt(){
-    var map = document.getElementById('theMap');    
-    map.width = window.innerWidth - 100;
-}
-//window.onload = screenAdapt;
-
-function folio(){
-    var fol = document.getElementsByClassName('portfolio-item');
-    for(item of fol){
-        var manip = item.children[0].children[0].style;
-        manip.border = "1px solid black";
-        manip.height = "260px";
-        manip.width = "260px";
-        manip.borderRadius = "25px";
-        manip.boxShadow = "5px 5px 30px black";
-    }
-}*/
 
 window.onload = function(){
     //folio()
